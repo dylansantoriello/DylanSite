@@ -1,0 +1,39 @@
+doctype 5
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Basic Company Template for Bootstrap 3
+    //
+       Bootstrap core CSS 
+    link(rel='stylesheet', href='/css/bootstrap.css')
+    //
+       Custom CSS for the 'One Page Wonder' Template 
+    link(href='css/one-page-wonder.css', rel='stylesheet')
+  body
+    nav.navbar.navbar-fixed-top.navbar-inverse(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Start Bootstrap
+        //
+           Collect the nav links, forms, and other content for toggling 
+        .collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/about') About
+            li
+              a(href='/education') Education
+            li
+              a(href='/workhistory') Work History
+        //
+           /.navbar-collapse 
+      //
+         /.container 
+    block content
